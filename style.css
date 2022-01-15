@@ -1,106 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap");
-
-body {
-  padding: 0;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  font-family: "Raleway", sans-serif;
+*{
+    margin:  0;
+    padding:  0;
+    font-family:  'Roboto', sans-serif;
 }
-
-nav {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.container{
+    width: 100%;
+    height:  100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/background.png);
+    background-position: center;
+    background-size: cover  ;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
-nav .logo a {
-  text-decoration: none;
-  color: black;
+.navbar{
+    height: 12%;
+    margin-right: 70px;
+    display:  flex;
+    align-items:  center;
+    box-sizing: border-box;
+    padding: 0%;
 }
-nav .onglets a {
-  margin-right: 10px;
-  color: #555454;
-  text-decoration: none;
-}
-nav .onglets a:hover {
-  text-decoration: underline;
-  color: black;
-}
-
-header {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
-  -webkit-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
-  -moz-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
-}
-header h3 {
-  margin-top: -10px;
-}
-header button {
-  background-color: black;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  border: none;
-  outline: none;
+.logo{
+  width:  40px;
+  margin-left: 50px;
   cursor: pointer;
 }
-header button:hover {
-  background-color: rgb(218, 218, 218);
-  color: black;
-}
-
-.cartes {
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cartes .carte {
-  border: 3px solid black;
-  max-width: 600px;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-.cartes .carte h1 {
-  margin-top: 0px;
-  text-transform: uppercase;
-}
-.cartes .carte a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-footer {
-  background-color: black;
-  padding: 20px;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .droite {
-  display: flex;
-}
-footer .droite p {
-  margin-top: 0px;
-  margin-right: 10px;
+.menu-icon{
+  width:  20px;
+  height: 20px;
+  margin: 8px;
+  background-image: linear-gradient(to roght, #e91e63, #f44336);
+  border-radius: 5px;
   cursor: pointer;
 }
+nav{
+  flex:  1;
+  text-align: right;
+}
+nav ul li{
+    display:  inline-block;
+    position: relative;
+    margin-left: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 9px 9px;
+}
 
-@media screen and (max-width: 640px) {
-  header {
-    margin-top: 20px;
-    text-align: left;
-  }
-  nav .logo {
-    margin-bottom: 10px;
-  }
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-right: 30px;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 60px;
+}
+h5{
+    color: #000;
+    *text-shadow: 0 0 5px; #999;
+
+}
+H6{
+    color: #FFF;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+H3{
+    color: #FFF;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+
+p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding:  12px 0;
+    background: #fff;
+    border:  0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s;
+    background-image: url(images/image1.png);
+    background-position: center;
+    background-size: cover;
+}
+.card1{
+    background-image: url(images/linkedin.png);
+}
+.card2{
+    background-image: url(images/facebook.png);
+}
+.card3{
+    background-image: url(images/insta.png);
+}
+.card4{
+    background-image: url(images/image1.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card menu {
+    transform: rotateX(55deg) rotateZ(-28deg);
+    transition: transform 200ms;
+}
+.container:hover .card {
+    transform: rotateX(55deg) rotateZ(-28deg) translateZ(20px);
+    transition: transform 200ms;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color:  #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover:after{
+    content: "";
+    position: absolute;
+    background-color:  #ff3c78;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition:  0.3s;
 }
