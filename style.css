@@ -130,7 +130,6 @@ button{
     margin: 10px 15px;
     margin-right: 10px;
     transition: transform 0.5s;
-    background-image: url(images/image1.png);
     background-position: center;
     background-size: cover;
     margin-left: 70px;
