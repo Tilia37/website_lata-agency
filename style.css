@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap");
+background-image: url(images/Acceuil.png)
 
 body {
   padding: 0;
@@ -7,10 +8,6 @@ body {
   right: 10%;
   font-family: "Raleway", sans-serif;
 }
-.container{
-  background-image:url(images/Acceuil.png);
-}
-
 nav {
   margin-top: 10px;
   display: flex;
