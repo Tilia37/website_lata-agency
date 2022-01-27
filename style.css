@@ -5,14 +5,14 @@ background-image: url(images/background.png);
     padding:  0;
     font-family:  'Roboto', sans-serif;
 }
--.container{
-    width: 200%;
-    height:  100vh;
+.container{
+    width: 400%;
+    height:  200vh;
     background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(images/background.png);
     background-position: center;
     background-size: cover  ;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 0%;
+    padding-right: 0%;
     box-sizing: border-box;
 }
 .navbar{
