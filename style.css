@@ -124,7 +124,7 @@ button{
     height: 230px;
     display: inline-block;
     border-radius: 20px;
-    padding: 15px 35px;
+    padding: 15px 15px;
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
