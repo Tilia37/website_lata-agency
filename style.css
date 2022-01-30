@@ -86,20 +86,20 @@ nav ul li a{
 h2{
     color: #fff;
     font-size: 23px;
-    margin-left: 50px;
+    margin-left: 35px;
 }
 h5{
     color: #000;
     *text-shadow: 0 0 5px; #999;
 
 }
-H6{
+h6{
     color: #FFF;
     font-size: 14px;
     line-height: 15px;
 }
 
-H3{
+h3{
     color: #FFF;
     font-size: 14px;
     line-height: 15px;
