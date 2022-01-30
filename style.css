@@ -45,8 +45,8 @@ background-image:url(images/background.png);
 body {
   padding: 0;
   position: absolute;
-  left: 10%;
-  right: 10%;
+  left: 0%;
+  right: 0%;
   font-family: "Raleway", sans-serif;
 }
 nav {
